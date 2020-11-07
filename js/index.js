@@ -27,6 +27,12 @@ https: //suggest.taobao.com/sug?code=utf-8&q=${oInput.value}&_ksTS=1603364053268
     $(function () {
         console.log($("input"));
 
+        $(".out").click(function () {
+            $('.adwrap').css({
+                display: "none"
+            })
+        })
+
         $('#sou').on("input", function () {
 
             if ($('#sou').val() == "") {
